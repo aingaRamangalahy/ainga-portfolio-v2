@@ -1,0 +1,61 @@
+.contact-container {
+  height: calc(100vh - 54.4px);
+  background: linear-gradient(
+    54deg,
+    rgba(74, 76, 179, 0.95) 34%,
+    hsla(0, 34%, 71%, 0.95)
+  );
+
+  h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-family: Roboto Mono, monospace;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+
+  .adress-container {
+    .name {
+      font-size: 18px;
+      line-height: 30px;
+      font-family: Roboto Mono, monospace;
+      margin-bottom: 15px;
+      font-weight: 600;
+
+      .underline {
+        text-decoration: underline;
+      }
+    }
+
+    .info-list {
+      list-style-type: none;
+      li {
+        font-size: 17px;
+        font-weight: 300;
+        .info {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .info-container {
+    .info {
+      cursor: pointer;
+      transition: all .3s ease;
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      p {
+        overflow-wrap: break-word;
+      }
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

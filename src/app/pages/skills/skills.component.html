@@ -1,0 +1,11 @@
+<div class="skills-container px-5 pt-3">
+  <h2 class="my-4">My Skills</h2>
+
+  <div class="skills row col-md-12">
+    <ng-template ngFor [ngForOf]="skills" let-skill>
+      <div class="skill-container col-md-3 my-2">
+        <app-skills-bloc [skill]="skill"></app-skills-bloc>
+      </div>
+    </ng-template>
+  </div>
+</div>

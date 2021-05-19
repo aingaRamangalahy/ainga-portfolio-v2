@@ -1,0 +1,21 @@
+<div
+  class="skill-bloc-container d-flex flex-column justify-content-between pt-3 "
+>
+  <p class="px-2 mx-2 my-0">{{ skill?.name }}</p>
+  <div class="logo align-self-center">
+    <i [class]="skill?.className"></i>
+  </div>
+  <div class="progress">
+    <div
+      class="progress-bar"
+      role="progressbar"
+      [style.width]="skill?.level+'%'"
+      aria-valuemin="0"
+      aria-valuemax="100"
+    >
+    </div>
+    <div class="value">
+      {{skill?.level}}%
+    </div>
+  </div>
+</div>

@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.css';
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+@import '~devicon/devicon.min.css';
+
+body {
+  font-family: 'Roboto';
+}
+
+p {
+  font-family: 'Roboto';
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

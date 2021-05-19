@@ -1,0 +1,20 @@
+<div class="ptf-container col-12">
+  <div class="img-container px-0 col-12">
+    <carousel [images]="project?.images" [cellsToShow]="1"> </carousel>
+  </div>
+  <div class="desc-container px-3 py-4 col-12">
+    <p class="title">{{ project?.title }}</p>
+    <p class="desc">
+      {{ project?.description }}
+    </p>
+    <ul>
+      <li *ngFor="let desc of project?.longDescription"> {{ desc }}</li>
+    </ul>
+    <div class="stack">
+      <p>USED STACK:</p>
+      <ng-template ngFor [ngForOf]="project?.stack" let-stackItem>
+        <app-stack [item]="stackItem"></app-stack>
+      </ng-template>
+    </div>
+  </div>
+</div>

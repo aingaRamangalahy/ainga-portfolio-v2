@@ -1,0 +1,27 @@
+<div class="ptf-container my-3 row col-12" (click)="projectClicked()">
+  <div class="img-container px-0 col-md-5">
+    <!-- <carousel [images]="imageT" [cellsToShow]="1"> </carousel> -->
+    <ngx-skeleton-loader
+    *ngIf="!isImageLoaded"
+    count="1"
+    [theme]="{
+      width: '100%',
+      height: '100%',
+      'border-radius':'O'
+    }"
+  ></ngx-skeleton-loader>
+    <img (load)="onLoaded($event)" [src]="project?.images[0]?.path" alt="ainga project" />
+  </div>
+  <div class="desc-container px-4 py-5 col-md-7">
+    <p class="title">{{ project?.title }}</p>
+    <p class="desc">
+      {{ project?.description }}
+    </p>
+    <div class="stack">
+      <p>USED STACK:</p>
+      <ng-template ngFor [ngForOf]="project?.stack" let-stackItem>
+        <app-stack [item]="stackItem"></app-stack>
+      </ng-template>
+    </div>
+  </div>
+</div>

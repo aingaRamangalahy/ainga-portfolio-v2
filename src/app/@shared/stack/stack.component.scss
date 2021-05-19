@@ -1,0 +1,11 @@
+.stack-item {
+  display: inline-block;
+  background: #c8c6cb4a;
+  padding: 3px 8px;
+  border-radius: 14px;
+
+  .item {
+    font-size: 13px;
+    font-weight: 600;
+  }
+}

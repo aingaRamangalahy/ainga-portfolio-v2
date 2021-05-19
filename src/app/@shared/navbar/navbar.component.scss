@@ -1,0 +1,14 @@
+.navbar-light {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: rgba(0, 0, 0, 0.55);
+        font-size: 15px;
+        font-weight: 600;
+        &:hover {
+            color: rgba(116, 116, 116, 0.55);
+        }
+      }
+    }
+  }
+}

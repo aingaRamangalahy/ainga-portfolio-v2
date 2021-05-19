@@ -1,0 +1,28 @@
+<div class="container">
+  <app-title> projects I Worked on </app-title>
+
+  <div class="projects col-md-12">
+    <ng-template ngFor [ngForOf]="projects" let-project>
+      <app-portfolio-bloc
+        [project]="project"
+        (choosed)="openPortfolio($event, content)"
+      ></app-portfolio-bloc>
+    </ng-template>
+  </div>
+
+  <ng-template #content let-modal>
+    <div class="modal-header d-flex justify-content-end">
+      <button
+        type="button"
+        class="btn close"
+        aria-label="Close"
+        (click)="modal.dismiss('Cross click')"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" perfectScrollbar>
+      <app-portfolio-modal [project]="selectedProject"></app-portfolio-modal>
+    </div>
+  </ng-template>
+</div>

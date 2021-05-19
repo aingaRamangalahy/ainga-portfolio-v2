@@ -1,0 +1,36 @@
+.skill-bloc-container {
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all .3s ease;
+  position: relative;
+
+
+  &:hover {
+    border-left: 4px solid #4B599D;
+    .logo {
+      transform: translateY(10px);
+    }
+  }
+
+  .logo {
+    transition: all .4s ease-in-out;
+    font-size: 70px;
+  }
+
+  .progress {
+    position: relative;
+    height: 0.5rem !important;
+    overflow: visible;
+    .progress-bar {
+      background: #ccc
+    }
+
+    .value {
+      position: absolute;
+      font-weight: 600;
+      top: -17px;
+      right: 3px;
+    }
+  }
+}

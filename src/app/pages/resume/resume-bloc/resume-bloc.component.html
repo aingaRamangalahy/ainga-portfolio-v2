@@ -1,0 +1,18 @@
+<div class="col-md-8 resume-bloc">
+  <p class="bloc-title my-0">{{ name }}</p>
+  <p class="bloc-date my-0">{{ date }}</p>
+  <div class="bloc-desc">
+    {{ desc }}
+  </div>
+  <div *ngIf="descArray" class="desc-array">
+    <ul>
+      <li *ngFor="let description of descArray"> {{ description }}</li>
+    </ul>
+  </div>
+
+  <div class="stack">
+    <ng-template ngFor [ngForOf]="stack" let-stackItem>
+        <app-stack [item]="stackItem"></app-stack>
+    </ng-template>
+  </div>
+</div>

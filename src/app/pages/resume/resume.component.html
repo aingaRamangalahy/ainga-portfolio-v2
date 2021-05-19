@@ -1,0 +1,42 @@
+<div class="container">
+  <app-title>
+    Education
+  </app-title>
+
+  <div class="resume-container">
+    <ng-template ngFor [ngForOf]="resumeUnivs" let-univ>
+      <app-resume-bloc
+       [name]="univ.name"
+       [date]="univ.date"
+       [desc]="univ.description"
+      ></app-resume-bloc>
+    </ng-template>
+  </div>
+
+  <app-title>
+    Work experience
+  </app-title>
+
+  <ng-template ngFor [ngForOf]="resumeExperiences" let-work>
+    <app-resume-bloc
+     [name]="work.name"
+     [date]="work.date"
+     [descArray]="work.descriptions"
+     [stack]="work.stack"
+    ></app-resume-bloc>
+  </ng-template>
+
+  <app-title>
+    Hackaton
+  </app-title>
+
+  <ng-template ngFor [ngForOf]="resumeHackathon" let-hack>
+    <app-resume-bloc
+     [name]="hack.name"
+     [date]="hack.date"
+     [desc]="hack.description"
+     [stack]="hack.stack"
+    ></app-resume-bloc>
+  </ng-template>
+</div>
+
