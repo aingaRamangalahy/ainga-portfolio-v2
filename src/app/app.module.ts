@@ -23,6 +23,7 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { SkillsBlocComponent } from './pages/Skills/skills-bloc/skills-bloc.component';
 import { HoverClassDirective } from './@shared/hover-class.directive';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -58,7 +59,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     {
       provide: PERFECT_SCROLLBAR_CONFIG,
       useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
-    }
+    },
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
