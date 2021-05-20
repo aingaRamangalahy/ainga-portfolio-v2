@@ -22,6 +22,7 @@ import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { SkillsBlocComponent } from './pages/Skills/skills-bloc/skills-bloc.component';
+import { HoverClassDirective } from './@shared/hover-class.directive';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -41,7 +42,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     PortfolioBlocComponent,
     PortfolioModalComponent,
     SkillsComponent,
-    SkillsBlocComponent
+    SkillsBlocComponent,
+    HoverClassDirective
   ],
   imports: [
     BrowserModule,

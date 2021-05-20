@@ -25,7 +25,7 @@ export class ResumeComponent implements OnInit {
       date: `June 2020 - now`,
       descriptions: [
         `Design and develop an application for the management of 3D resources.`,
-        `Design and develop the back office part of a virtual event with integration of a real-time chat system`,
+        `Design and develop the back office part of a virtual showroom with integration of a real-time chat system`,
       ],
       stack: [
         'Angular (NgRx)',
@@ -34,6 +34,7 @@ export class ResumeComponent implements OnInit {
         'MongoDB',
         'WebRTC',
         'Socket.io',
+        'JWT',
         'Gitlab',
       ],
     },

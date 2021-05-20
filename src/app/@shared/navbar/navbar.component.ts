@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  isExpanded = false;
 
   pages = [
     {
-      name : "home",
+      name : "About me",
       url: "/home"
     },
     {
@@ -33,6 +34,14 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  // unExpand() {
+  //   this.isExpanded = false;
+  //   console.log("unexpand", this.isExpanded)
+  // }
+  isHidden(el) {
+    return (el.offsetParent === null)
+}
 
 
 }

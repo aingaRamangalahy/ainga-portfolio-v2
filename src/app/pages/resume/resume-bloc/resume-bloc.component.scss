@@ -1,13 +1,13 @@
 .resume-bloc {
 
-  border-left: 2px solid #6d56c1;
+  border-left: 2px solid #669DD4;
   padding-left: 25px;
   padding-bottom: 40px;
   position: relative;
   &::before {
     width: 12px;
     height: 12px;
-    border: 2px solid #6d56c1;
+    border: 2px solid #669DD4;
     position: absolute;
     content: "";
     border-radius: 50%;
@@ -18,7 +18,7 @@
 
   .bloc-title {
     text-transform: uppercase;
-    color: #6d56c1;
+    color: #669DD4;
     font-size: 14px;
     line-height: 20px;
     font-family: Roboto Mono, monospace;

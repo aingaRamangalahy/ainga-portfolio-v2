@@ -1,19 +1,14 @@
 .home-container {
   height: calc(100vh - 54.4px);
-  position: relative;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgb(98, 96, 134) 0%,
-    rgba(9, 28, 121, 0.7346288857339811) 47%,
-    rgb(99, 168, 182) 100%
-  );
-
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c382.044C73.628%2c370.641%2c144.569%2c360.828%2c213.097%2c331.586C293.551%2c297.255%2c389.443%2c273.662%2c432.469%2c197.502C476.01%2c120.43%2c449.628%2c24.776%2c435.824%2c-62.662C422.193%2c-149.007%2c420.583%2c-250.436%2c353%2c-305.877C285.746%2c-361.048%2c184.258%2c-319.367%2c99.427%2c-338.619C22.048%2c-356.18%2c-45.068%2c-435.109%2c-121.429%2c-413.548C-197.742%2c-392%2c-228.379%2c-301.527%2c-270.306%2c-234.221C-306.261%2c-176.503%2c-335.674%2c-116.914%2c-347.882%2c-50.018C-360.469%2c18.956%2c-354.782%2c87.118%2c-341.513%2c155.964C-324.652%2c243.447%2c-334.495%2c355.707%2c-260.205%2c404.886C-186.103%2c453.941%2c-87.821%2c395.645%2c0%2c382.044' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1440 1006.081C1534.998 1024.304 1638.058 1046.191 1724.288 1002.361 1812.792 957.375 1864.112 862.767 1902.271 771.112 1939.5439999999999 681.5840000000001 1965.7759999999998 581.356 1938.283 488.358 1912.031 399.558 1815.5729999999999 356.952 1758.316 284.177 1697.158 206.445 1687.132 68.79000000000002 1590.74 46.625999999999976 1492.784 24.101999999999975 1424.109 150.14999999999998 1330.1 185.71499999999997 1246.452 217.361 1136.808 179.26799999999997 1073.405 242.34300000000002 1009.947 305.473 1027.936 410.323 1015.256 498.931 1002.585 587.474 959.182 681.311 999.134 761.337 1038.9560000000001 841.102 1140.165 861.992 1218.112 905.264 1290.609 945.51 1358.566 990.46 1440 1006.081' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .content-items {
+    //border: 2px solid red;
+    position: relative;
+    .personal-profile-hi {
+      font-size: 40px;
+    }
     .personal-profile-name {
       font-size: 44px;
       line-height: 50px;
@@ -27,6 +22,10 @@
       margin-bottom: 40px;
     }
 
+    .main-text {
+      font-size: 17px;
+    }
+
     .personal-profile-social {
       a {
         cursor: pointer;
@@ -36,6 +35,46 @@
         color: #fff !important;
       }
     }
-  }
 
+    .myself {
+      width: 200px;
+      height: 200px;
+      box-sizing: border-box;
+      border: 5px white solid;
+      border-radius: 50%;
+      overflow: hidden;
+      position: absolute;
+      top: -10px;
+      right: -20%;
+      background-color: #0B2239;
+      animation: float 6s ease-in-out infinite;
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+      img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: -25%;
+        transition: all 1.3s ease;
+      }
+    }
+
+    @keyframes float {
+      0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+      50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+      }
+      100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+    }
+  }
 }

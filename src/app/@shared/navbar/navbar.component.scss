@@ -1,14 +1,23 @@
 .navbar-light {
+  background-color: #0b2239 !important;
   .navbar-nav {
     .nav-item {
       .nav-link {
-        color: rgba(0, 0, 0, 0.55);
+        color: #fff;
         font-size: 15px;
         font-weight: 600;
         &:hover {
-            color: rgba(116, 116, 116, 0.55);
+          color: #669dd4;
         }
+      }
+
+      .active {
+        color: #669dd4;
       }
     }
   }
+}
+
+.navbar-toggler {
+  filter: invert(100%);
 }

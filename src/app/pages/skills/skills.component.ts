@@ -3,67 +3,89 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent implements OnInit {
-
-  skills = [
+  progLanguages = [
+    {
+      name: 'Javascript',
+      className: 'devicon-javascript-plain',
+      level: '75',
+    },
+    {
+      name: 'Typescript',
+      className: 'devicon-typescript-plain',
+      level: '75',
+    },
+    {
+      name: 'Java',
+      className: 'devicon-java-plain',
+      level: '55',
+    },
+    // {
+    //   name: 'PHP',
+    //   className: 'devicon-php-plain',
+    //   level: '70',
+    // },
+  ];
+  frameworks = [
     {
       name: 'Angular',
-      className: "devicon-angularjs-plain colored",
-      level: '70'
+      className: 'devicon-angularjs-plain',
+      level: '70',
     },
     {
       name: 'NodeJs',
-      className: "devicon-nodejs-plain colored",
-      level: '65'
+      className: 'devicon-nodejs-plain',
+      level: '65',
     },
     {
       name: 'Express',
-      className: "devicon-express-original colored",
-      level: '70'
+      className: 'devicon-express-original',
+      level: '70',
     },
+    // {
+    //   name: 'Spring Boot',
+    //   className: 'devicon-spring-plain',
+    //   level: '50',
+    // },
+  ];
+  databases = [
     {
       name: 'MongoDB',
-      className: "devicon-mongodb-plain colored",
-      level: '60'
+      className: 'devicon-mongodb-plain',
+      level: '60',
     },
     {
       name: 'MySQL',
-      className: "devicon-mysql-plain colored",
-      level: '70'
+      className: 'devicon-mysql-plain',
+      level: '70',
     },
-    {
-      name: 'Spring Boot',
-      className: "devicon-spring-plain colored",
-      level: '50'
-    },
+  ];
+  versioning = [
     {
       name: 'Git',
-      className: "devicon-git-plain colored",
-      level: '60'
+      className: 'devicon-git-plain',
+      level: '60',
     },
     {
-      name: 'HTML',
-      className: "devicon-html5-plain colored",
-      level: '90'
+      name: 'GitHub',
+      className: 'devicon-github-original',
+      level: '70',
     },
-    {
-      name: 'CSS',
-      className: "devicon-css3-plain colored",
-      level: '85'
-    },
-    {
-      name: 'Javascript',
-      className: "devicon-javascript-plain colored",
-      level: '75'
-    },
+    // {
+    //   name: 'GitLab',
+    //   className: 'devicon-gitlab-plain',
+    //   level: '60',
+    // },
+    // {
+    //   name: 'Bitbucket',
+    //   className: 'devicon-bitbucket-original',
+    //   level: '65',
+    // },
+  ];
 
-  ]
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -1,5 +1,5 @@
 <div class="ptf-container my-3 row col-12" (click)="projectClicked()">
-  <div class="img-container px-0 col-md-5">
+  <div class="img-container px-0 col-12 col-sm-12 col-md-5">
     <!-- <carousel [images]="imageT" [cellsToShow]="1"> </carousel> -->
     <ngx-skeleton-loader
     *ngIf="!isImageLoaded"
@@ -12,10 +12,10 @@
   ></ngx-skeleton-loader>
     <img (load)="onLoaded($event)" [src]="project?.images[0]?.path" alt="ainga project" />
   </div>
-  <div class="desc-container px-4 py-5 col-md-7">
-    <p class="title">{{ project?.title }}</p>
+  <div class="desc-container px-4 col-12 col-sm-12 py-5 col-md-7">
+    <p class="title">{{  project?.title }}</p>
     <p class="desc">
-      {{ project?.description }}
+      {{ getFirst30(project?.description)  }}
     </p>
     <div class="stack">
       <p>USED STACK:</p>

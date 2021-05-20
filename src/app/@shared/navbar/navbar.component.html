@@ -1,4 +1,4 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light">
   <div class="container">
     <button
       class="navbar-toggler"
@@ -6,18 +6,20 @@
       data-bs-toggle="collapse"
       data-bs-target="#navbarNav"
       aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+      (click)="isExpanded = !isExpanded"
+      [attr.aria-expanded]="!isExpanded"
+      toggle="collapse"
+      #expand
     >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item mx-4" *ngFor="let page of pages">
+        <li (click)="!isHidden(expand) && expand.click()" class="nav-item mx-4" *ngFor="let page of pages">
           <a
             class="nav-link"
             [routerLink]="[page.url]"
-            routerLinkActive="actice"
+            routerLinkActive="active"
             ria-current="page"
             >{{ page.name | uppercase}}</a
           >
