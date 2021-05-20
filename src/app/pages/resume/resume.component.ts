@@ -52,7 +52,7 @@ export class ResumeComponent implements OnInit {
 
   resumeHackathon = [
     {
-      name: `Inter University Hackaton`,
+      name: `Inter University Hackathon`,
       date: `March 2019`,
       description: `Design and develop Mobile and web application to fight corruption`,
       stack: [
