@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class ResumeComponent implements OnInit {
   resumeUnivs = [
     {
-      name: `University of Fianarantsoa - National School of Computer Science`,
+      name: `University of Fianarantsoa - Ecole Nationale d'Informatique`,
       date: `2018-2020`,
       description: `Master degree in Computer Science`,
     },
     {
-      name: `University of Fianarantsoa - National School of Computer Science`,
+      name: `University of Fianarantsoa - Ecole Nationale d'Informatique`,
       date: `2015-2018`,
       description: `Bachelor degree in Computer Science`,
     },
@@ -24,7 +24,7 @@ export class ResumeComponent implements OnInit {
       name: `W3D Madagascar - MEAN Stack developer`,
       date: `June 2020 - now`,
       descriptions: [
-        `Design and develop an application for the management of 3D resources.`,
+        `Design and develop a web application for the management of 3D resources used by modelers`,
         `Design and develop the back office part of a virtual showroom with integration of a real-time chat system`,
       ],
       stack: [

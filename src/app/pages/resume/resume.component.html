@@ -1,5 +1,18 @@
 <div class="container">
   <app-title>
+    Work experience
+  </app-title>
+
+  <ng-template ngFor [ngForOf]="resumeExperiences" let-work>
+    <app-resume-bloc
+     [name]="work.name"
+     [date]="work.date"
+     [descArray]="work.descriptions"
+     [stack]="work.stack"
+    ></app-resume-bloc>
+  </ng-template>
+
+  <app-title>
     Education
   </app-title>
 
@@ -13,18 +26,7 @@
     </ng-template>
   </div>
 
-  <app-title>
-    Work experience
-  </app-title>
 
-  <ng-template ngFor [ngForOf]="resumeExperiences" let-work>
-    <app-resume-bloc
-     [name]="work.name"
-     [date]="work.date"
-     [descArray]="work.descriptions"
-     [stack]="work.stack"
-    ></app-resume-bloc>
-  </ng-template>
 
   <app-title>
     Hackathon
