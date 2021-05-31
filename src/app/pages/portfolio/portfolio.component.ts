@@ -18,7 +18,7 @@ export class PortfolioComponent implements OnInit {
         { path: "assets/projects/pimp/2.png"},
       ],
       description: `Design and development of a web application for the management of 3D resources of the company W3D.
-      The user can download a zip file containing the 3D elements. From the upload interface, the user can describe the contents of the zip file (extension, category, etc ...).
+      The user can upload/download a zip file containing the 3D elements. From the upload interface, the user can describe the contents of the zip file (extension, category, etc ...).
       Each uploaded file can be downloaded by other users having access to the site.`,
       longDescription: [
         `Creation of APIs with Node JS and express`,

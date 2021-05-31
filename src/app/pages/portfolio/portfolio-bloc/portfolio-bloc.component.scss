@@ -1,17 +1,50 @@
 .ptf-container {
   transition: all 0.3s ease-in-out;
   &:hover {
-    transform: scale(1.01);
-    -webkit-box-shadow: 4px 2px 15px 0px rgba(173, 166, 173, 1);
-    -moz-box-shadow: 4px 2px 15px 0px rgba(173, 166, 173, 1);
-    box-shadow: 4px 2px 15px 0px rgba(173, 166, 173, 1);
+
     cursor: pointer;
+    .img-container {
+      img {
+        transform: scale(1.2);
+      }
+      .overlay {
+        z-index: 2;
+        opacity: 0.6;
+      }
+
+      .icon {
+        z-index: 2;
+        opacity: 1;
+      }
+    }
   }
 
   .img-container {
+    overflow: hidden;
+    position: relative;
     img {
       width: 100%;
       height: 100%;
+      transition: all .5s ease-in-out;
+    }
+
+    .overlay {
+      background-color: #000;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: all .4s ease;
+      opacity: 0;
+    }
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      transition: all .4s ease;
     }
   }
 

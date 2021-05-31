@@ -14,19 +14,19 @@ export class NavbarComponent implements OnInit {
       url: "/home"
     },
     {
-      name : "resume",
+      name : "Resume",
       url: "/resume"
     },
     {
-      name : "skills",
+      name : "Skills",
       url: "/skills"
     },
     {
-      name : "portfolio",
+      name : "Portfolio",
       url: "/portfolio"
     },
     {
-      name : "contact",
+      name : "Contact",
       url: "/contact"
     },
   ]
