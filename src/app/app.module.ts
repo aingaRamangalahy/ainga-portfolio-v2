@@ -24,6 +24,8 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { SkillsBlocComponent } from './pages/Skills/skills-bloc/skills-bloc.component';
 import { HoverClassDirective } from './@shared/hover-class.directive';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HomeImgV1Component } from './@shared/home-img-v1/home-img-v1.component';
+import { HomeImgV2Component } from './@shared/home-img-v2/home-img-v2.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -44,7 +46,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     PortfolioModalComponent,
     SkillsComponent,
     SkillsBlocComponent,
-    HoverClassDirective
+    HoverClassDirective,
+    HomeImgV1Component,
+    HomeImgV2Component
   ],
   imports: [
     BrowserModule,

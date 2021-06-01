@@ -33,7 +33,8 @@ export class PortfolioComponent implements OnInit {
         'MongoDB',
         'JWT',
         'Bitbucket'
-      ]
+      ],
+      url: ''
     },
     {
       title: `virtual event Backoffice`,
@@ -59,7 +60,8 @@ export class PortfolioComponent implements OnInit {
         'WebRTC',
         'Socket.io',
         'gitlab'
-      ]
+      ],
+      url: ''
     },
     {
       title: `Reporting`,
@@ -76,7 +78,8 @@ export class PortfolioComponent implements OnInit {
         'Java',
         'SpringBoot',
         'MySQL',
-      ]
+      ],
+      url: ''
     },
     {
       title: `HTML landing page template`,
@@ -94,7 +97,8 @@ export class PortfolioComponent implements OnInit {
         'CSS',
         'Jquery',
         'Bootstrap',
-      ]
+      ],
+      url: 'https://theme4us.com/cieno'
     },
   ]
 

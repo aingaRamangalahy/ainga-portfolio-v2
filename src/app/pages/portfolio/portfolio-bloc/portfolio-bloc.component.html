@@ -2,22 +2,26 @@
   <div class="img-container px-0 col-12 col-sm-12 col-md-5">
     <!-- <carousel [images]="imageT" [cellsToShow]="1"> </carousel> -->
     <ngx-skeleton-loader
-    *ngIf="!isImageLoaded"
-    count="1"
-    [theme]="{
-      width: '100%',
-      height: '100%',
-      'border-radius':'O'
-    }"
-  ></ngx-skeleton-loader>
+      *ngIf="!isImageLoaded"
+      count="1"
+      [theme]="{
+        width: '100%',
+        height: '100%',
+        'border-radius': 'O'
+      }"
+    ></ngx-skeleton-loader>
     <div class="overlay"></div>
     <i class="fa fa-search-plus fa-2x icon"></i>
-    <img (load)="onLoaded($event)" [src]="project?.images[0]?.path" alt="ainga project" />
+    <img
+      (load)="onLoaded($event)"
+      [src]="project?.images[0]?.path"
+      alt="ainga project"
+    />
   </div>
   <div class="desc-container px-4 col-12 col-sm-12 py-5 col-md-7">
-    <p class="title">{{  project?.title }}</p>
+    <p class="title">{{ project?.title }}</p>
     <p class="desc">
-      {{ getFirst30(project?.description)  }}
+      {{ getFirst30(project?.description) }}
     </p>
     <div class="stack">
       <p>USED STACK:</p>
@@ -25,5 +29,9 @@
         <app-stack [item]="stackItem"></app-stack>
       </ng-template>
     </div>
+    <div class="url" *ngIf="project?.url">
+      <a target="_blank" href="{{ project?.url }}">{{project?.url}}</a>
+    </div>
   </div>
+
 </div>
