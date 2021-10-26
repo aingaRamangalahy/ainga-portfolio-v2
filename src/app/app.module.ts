@@ -21,7 +21,7 @@ import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { SkillsComponent } from './pages/skills/skills.component';
-import { SkillsBlocComponent } from './pages/Skills/skills-bloc/skills-bloc.component';
+import { SkillsBlocComponent } from './pages/skills/skills-bloc/skills-bloc.component';
 import { HoverClassDirective } from './@shared/hover-class.directive';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HomeImgV1Component } from './@shared/home-img-v1/home-img-v1.component';
