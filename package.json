@@ -12,7 +12,7 @@
     "serve:ssr": "node dist/ainga-portfolio-v2/server/main.js",
     "build:ssr": "ng build --prod && ng run ainga-portfolio-v2:server:production",
     "prerender": "ng run ainga-portfolio-v2:prerender",
-    "heroku-postbuild": "ng build --prod"
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
