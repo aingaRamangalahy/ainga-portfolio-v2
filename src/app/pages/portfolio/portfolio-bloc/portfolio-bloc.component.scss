@@ -1,19 +1,20 @@
 .ptf-container {
   transition: all 0.3s ease-in-out;
+  height: 100%;
   &:hover {
     cursor: pointer;
     .img-container {
-      img {
-        transform: scale(1.2);
-      }
-      .overlay {
-        z-index: 2;
-        opacity: 0.6;
-      }
+      // img {
+      //   transform: scale(1.2);
+      // }
+      // .overlay {
+      //   z-index: 2;
+      //   opacity: 0.6;
+      // }
 
       .icon {
         z-index: 2;
-        opacity: 1;
+        top: 70%;
       }
     }
   }
@@ -21,10 +22,12 @@
   .img-container {
     overflow: hidden;
     position: relative;
+    height: 100%;
     img {
       width: 100%;
       height: 100%;
       transition: all 0.5s ease-in-out;
+      border-radius: 10px;
     }
 
     .overlay {
@@ -33,56 +36,69 @@
       height: 100%;
       position: absolute;
       transition: all 0.4s ease;
-      opacity: 0;
+      opacity: 0.6;
+      border-radius: 10px;
     }
 
     .icon {
       position: absolute;
-      top: 50%;
+      top: 105%;
       left: 50%;
-      opacity: 0;
+      opacity: 1;
       transform: translate(-50%, -50%);
       color: #fff;
       transition: all 0.4s ease;
     }
-  }
 
-  .desc-container {
-    border: 1px solid #ccc;
-    position: relative;
     .title {
-      font-size: 18px;
-      line-height: 30px;
-      font-family: Roboto Mono, monospace;
-      text-transform: uppercase;
-      margin-bottom: 15px;
-      font-weight: 700;
-    }
-
-    .desc {
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 45px;
-    }
-
-    .stack {
-      p {
-        font-family: Roboto Mono, monospace;
-        font-size: 12px;
-        line-height: 18px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-      }
-    }
-
-    .url {
+      color: white;
       position: absolute;
-      right: 3px;
-      bottom: 3px;
-      a {
-        font-size: 14px;
-      }
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      text-transform: uppercase;
+      font-size: 2em;
+      width: 90%;
+      text-align: center;
     }
   }
+
+  // .desc-container {
+  //   border: 1px solid #ccc;
+  //   position: relative;
+  //   .title {
+  //     font-size: 18px;
+  //     line-height: 30px;
+  //     font-family: Roboto Mono, monospace;
+  //     text-transform: uppercase;
+  //     margin-bottom: 15px;
+  //     font-weight: 700;
+  //   }
+
+  //   .desc {
+  //     font-size: 16px;
+  //     line-height: 24px;
+  //     margin-bottom: 45px;
+  //   }
+
+  //   .stack {
+  //     p {
+  //       font-family: Roboto Mono, monospace;
+  //       font-size: 12px;
+  //       line-height: 18px;
+  //       font-weight: 700;
+  //       text-transform: uppercase;
+  //       margin-bottom: 15px;
+  //     }
+  //   }
+
+  //   .url {
+  //     position: absolute;
+  //     right: 3px;
+  //     bottom: 3px;
+  //     a {
+  //       font-size: 14px;
+  //     }
+  //   }
+  // }
 }

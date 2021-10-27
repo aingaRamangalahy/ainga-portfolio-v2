@@ -1,12 +1,15 @@
 <div class="container">
   <app-title> projects I Worked on </app-title>
 
-  <div class="projects col-md-12">
+  <div class="projects row col-12">
     <ng-template ngFor [ngForOf]="projects" let-project>
-      <app-portfolio-bloc
+      <div class="ptf col-md-6">
+        <app-portfolio-bloc
         [project]="project"
         (choosed)="openPortfolio($event, content)"
       ></app-portfolio-bloc>
+      </div>
+
     </ng-template>
   </div>
 
