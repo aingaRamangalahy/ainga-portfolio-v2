@@ -8,10 +8,10 @@
       {{ project?.description }}
     </p>
     <ul>
-      <li *ngFor="let desc of project?.longDescription"> {{ desc }}</li>
+      <li *ngFor="let desc of project?.longDescription">{{ desc }}</li>
     </ul>
     <div class="stack">
-      <p>USED STACK:</p>
+      <p>STACK:</p>
       <ng-template ngFor [ngForOf]="project?.stack" let-stackItem>
         <app-stack [item]="stackItem"></app-stack>
       </ng-template>
